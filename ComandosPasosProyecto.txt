@@ -1,0 +1,23 @@
+Pasos servicio de Banking
+
+## Comandos Docker Account
+docker build . -t drondon87/accounts
+docker image inspect 406
+docker run -d -p 8080:8080 drondon87/accounts
+docker run -d -p 8081:8080 drondon87/accounts
+docker logs
+docker container pause [ID_CONTENEDOR]
+docker container unpause [ID_CONTENEDOR]
+docker container inspect [ID_CONTENEDOR]
+docker stats
+docker push docker.io/drondon87/accounts
+
+## Comandos Loan
+mvn spring-boot:build-image
+docker run -d -p 8090:8090 drondon87/loans
+docker push docker.io/drondon87/loans
+
+## Comandos Cards
+mvn spring-boot:build-image
+docker run -d -p 9000:9000 drondon87/cards
+docker push docker.io/drondon87/cards
