@@ -18,6 +18,12 @@ docker run -d -p 8090:8090 drondon87/loans
 docker push docker.io/drondon87/loans
 
 ## Comandos Cards
-mvn spring-boot:build-image
 docker run -d -p 9000:9000 drondon87/cards
 docker push docker.io/drondon87/cards
+
+## Comando Generar Imagen
+mvn spring-boot:build-image
+
+## Comandos Config server
+docker push docker.io/drondon87/configserver
+
