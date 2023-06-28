@@ -27,3 +27,32 @@ mvn spring-boot:build-image
 ## Comandos Config server
 docker push docker.io/drondon87/configserver
 
+## Comandos Eureka
+docker push docker.io/drondon87/eurekaserver
+
+### URLs accesos Apps
+
+## Accounts
+http://localhost:8080/account/properties
+
+## Loans
+http://localhost:8090/loans/properties
+
+## Cards
+http://localhost:9000/cards/properties
+
+## ConfigServer
+http://localhost:8071/cards/dev
+http://localhost:8071/accounts/dev
+http://localhost:8071/loans/prod
+http://localhost:8071/application/default
+
+## Eureka
+http://localhost:8070/
+http://localhost:8070/eureka/apps/accounts
+http://localhost:8070/eureka/apps/cards
+http://localhost:8070/eureka/apps/loans
+http://host.docker.internal:8080/actuator
+http://host.docker.internal:9000/actuator
+http://host.docker.internal:8090/actuator
+
