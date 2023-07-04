@@ -30,6 +30,9 @@ docker push docker.io/drondon87/configserver
 ## Comandos Eureka
 docker push docker.io/drondon87/eurekaserver
 
+## Comandos Gateway
+docker push docker.io/drondon87/gatewayserver
+
 ### URLs accesos Apps
 
 ## Accounts
@@ -55,4 +58,8 @@ http://localhost:8070/eureka/apps/loans
 http://host.docker.internal:8080/actuator
 http://host.docker.internal:9000/actuator
 http://host.docker.internal:8090/actuator
+
+## Gateway
+http://localhost:8072/actuator/gateway/routes
+http://localhost:8072/actuator
 
